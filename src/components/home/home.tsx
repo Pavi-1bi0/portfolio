@@ -95,13 +95,13 @@ const Home: React.FC = () => {
                 </div>
 
             </div>
-
-            {/* Scroll to Top Button */}
+{/* 
+            Scroll to Top Button
             {showScrollButton && (
                 <button className="scroll-top-button" onClick={scrollToTop}>
                     <ArrowUpwardOutlinedIcon />
                 </button>
-            )}
+            )} */}
         </div>
     );
 };
