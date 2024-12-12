@@ -1,0 +1,125 @@
+.sidebar {
+    width: 100px;
+    /* Initial width */
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-top: 20px;
+    // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: width 0.3s ease;
+    padding-left: 20px;
+    height: 100vh;
+    position: fixed;
+
+
+    &:hover {
+        width: 180px;
+        /* Expand sidebar width on hover */
+
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+
+        li {
+            margin: 10px 0;
+            align-items: center; // Center items vertically
+            justify-content: flex-start; // Align items horizontally
+            transition: background-color 0.3s ease;
+
+            &:hover {
+
+                padding-left: 10px; // Slight indentation for hover effect
+                border-radius: 25px;
+                cursor: pointer;
+                background: #1976d2;
+
+                a {
+                    background-color: #1976d2;
+                    margin-left: 30px;
+                }
+
+                i {
+                    color: #fff;
+
+                }
+
+                span {
+                 
+                    color: #fff;
+                    padding-left: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+
+            }
+
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+             
+                height: 50px;
+                background: rgb(226 218 218 / 42%);
+                border-radius: 50%;
+                transition: width 0.3s ease;
+                align-items: center; // Center icon and text vertically
+                // justify-content: flex-start; // Align items horizontally
+                // transform-origin: left center;
+             
+
+             
+                span {
+                    display: none;
+                }
+
+                /* When the sidebar is hovered, show the text */
+                .sidebar:hover & span {
+                    display: inline-block;
+                    /* Display the text when sidebar expands */
+                    margin-left: 10px;
+                    /* Add spacing between icon and text */
+                    color: white;
+                }
+
+                i {
+                    font-size: 35px;
+                    color: black;
+                    // margin-right: 10px; // Space between icon and text
+                    transition: color 0.3s ease;
+                    // margin-right: 10px;
+                    /* Space between icon and text */
+                }
+
+                &:hover {
+                    background: #1976d2;
+
+                    i {
+                        color: #fff;
+                        // margin-right: -40px;
+                        // margin-left: 66px;
+                    }
+                }
+
+                &.active {
+                    background: #1976d2;
+
+                    /* Active item background color */
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
