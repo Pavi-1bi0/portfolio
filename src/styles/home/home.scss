@@ -41,7 +41,8 @@
             flex-direction: column;
             justify-content: left;
             flex-wrap: nowrap;
-            margin-right: 35rem;
+            // margin-right: 35rem;
+            align-self: baseline;
 
             .subtitle {
                 font-size: 20px;
@@ -82,7 +83,8 @@
             justify-content: center;
             gap: 20px;
             // margin-top: 20px;
-            margin-right: 54rem;
+            // margin-right: 54rem;
+            align-self: baseline;
 
             .social-link {
                 font-size: 20px;
@@ -100,7 +102,7 @@
             margin-top: 20px;
             color: #333;
             display: flex;
-            padding-left: 150px; /* Adjust padding for larger screens */
+            // padding-left: 150px; /* Adjust padding for larger screens */
             flex-direction: column;
             flex-wrap: nowrap;
             gap: 15px;

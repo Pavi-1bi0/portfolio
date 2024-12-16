@@ -119,6 +119,10 @@
       .about-content {
         .about-details {
           margin-left: 200px;
+          .details-list{
+            margin-left: 100px;
+            justify-content: flex-start;
+          }
         }
       }
     }
