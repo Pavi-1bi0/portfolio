@@ -77,9 +77,9 @@ const Home: React.FC = () => {
 
                 {/* Download Section */}
                 <div className="download-section">
-                    <button className="resume-download-button" onClick={downloadResume}>
+                    {/* <button className="resume-download-button" onClick={downloadResume}>
                         Resume <FileDownloadOutlinedIcon className="icon" />
-                    </button>
+                    </button> */}
 
 
                    
