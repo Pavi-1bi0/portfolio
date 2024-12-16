@@ -1,57 +1,51 @@
+/* Main Sidebar */
 .sidebar {
-    width: 100px;
-    /* Initial width */
-    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px; /* Initial width */
+    background-color: #ffffff;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding-top: 20px;
-    // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     justify-content: center;
-    transition: width 0.3s ease;
     padding-left: 20px;
     height: 100vh;
-    position: fixed;
-
-
-    &:hover {
-        width: 180px;
-        /* Expand sidebar width on hover */
-
-    }
-
+    transition: width 0.3s ease; /* Smooth transition for width */
+    z-index: 1000; /* Ensure it overlaps the main content */
+    // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for aesthetics */
+    
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
         width: 100%;
 
-
         li {
             margin: 10px 0;
-            align-items: center; // Center items vertically
-            justify-content: flex-start; // Align items horizontally
+            align-items: center; /* Center items vertically */
+            justify-content: flex-start; /* Align items horizontally */
             transition: background-color 0.3s ease;
 
+            /* Hover effect for items */
             &:hover {
-
-                padding-left: 10px; // Slight indentation for hover effect
-                border-radius: 25px;
+                padding-left: 10px; /* Slight indentation for hover effect */
                 cursor: pointer;
                 background: #1976d2;
+                border-radius: 25px;
 
                 a {
                     background-color: #1976d2;
-                    margin-left: 30px;
+                    margin-left: 30px; /* Add left margin for hover effect */
                 }
 
                 i {
                     color: #fff;
-
                 }
 
                 span {
-                 
                     color: #fff;
                     padding-left: 15px;
                     display: flex;
@@ -59,67 +53,104 @@
                     align-items: center;
                     text-align: center;
                 }
-
             }
-
 
             a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 50px;
-             
                 height: 50px;
                 background: rgb(226 218 218 / 42%);
                 border-radius: 50%;
-                transition: width 0.3s ease;
-                align-items: center; // Center icon and text vertically
-                // justify-content: flex-start; // Align items horizontally
-                // transform-origin: left center;
-             
+                transition: all 0.3s ease;
 
-             
                 span {
-                    display: none;
+                    display: none; /* Hide text initially */
                 }
 
                 /* When the sidebar is hovered, show the text */
                 .sidebar:hover & span {
                     display: inline-block;
-                    /* Display the text when sidebar expands */
-                    margin-left: 10px;
-                    /* Add spacing between icon and text */
+                    margin-left: 10px; /* Add spacing between icon and text */
                     color: white;
                 }
 
                 i {
                     font-size: 35px;
                     color: black;
-                    // margin-right: 10px; // Space between icon and text
                     transition: color 0.3s ease;
-                    // margin-right: 10px;
-                    /* Space between icon and text */
                 }
 
                 &:hover {
                     background: #1976d2;
-
                     i {
                         color: #fff;
-                        // margin-right: -40px;
-                        // margin-left: 66px;
                     }
                 }
 
                 &.active {
                     background: #1976d2;
-
-                    /* Active item background color */
                     i {
                         color: #fff;
                     }
                 }
             }
+        }
+    }
+
+    /* Hamburger Icon (for mobile screens) */
+    .hamburger-icon {
+        display: none;
+        background: none;
+        border: none;
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        &.active {
+            left: 0; /* Move the hamburger icon to the left */
+        }
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 600px) {
+        width: 60px; /* Shrink the sidebar on mobile */
+        padding-left: 10px;
+
+        /* Sidebar hidden initially */
+        transform: translateX(-250px);
+
+        /* Display hamburger icon on small screens */
+        .hamburger-icon {
+            display: block !important;
+            left: 250px;
+            // margin-top: -6rem;
+        }
+
+        /* When the sidebar is active, show it */
+        &.active {
+            transform: translateX(0);
+        }
+
+        /* Smaller font size for mobile nav items */
+        .nav-link {
+            font-size: 14px;
+        }
+
+        /* Hide text when sidebar is small */
+        .sidebar .nav-link span {
+            display: none;
+        }
+
+        .sidebar:hover {
+            width: 60px; /* No expansion on hover for mobile */
+        }
+
+        .sidebar.active {
+            width: 250px; /* Full width when active on mobile */
         }
     }
 }

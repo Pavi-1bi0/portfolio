@@ -1,3 +1,5 @@
+@import '../abstract/break_points';
+
 .home-container {
     display: flex;
     height: 100vh;
@@ -17,7 +19,7 @@
         text-align: center;
         padding: 20px;
         background-color: white;
-
+        padding-left: 200px;
         img {
             position: absolute;
             inset: 0;
@@ -97,39 +99,20 @@
             text-align: center;
             margin-top: 20px;
             color: #333;
-            /* margin-left: -48rem; */
             display: flex;
-
+            padding-left: 150px; /* Adjust padding for larger screens */
             flex-direction: column;
             flex-wrap: nowrap;
             gap: 15px;
             justify-content: left;
             align-self: baseline;
-            margin-left: 270px;
-
+        
             h3 {
                 font-size: 1.5rem;
                 margin-bottom: 10px;
             }
-            .intern-download-button {
-                padding: 10px 20px;
-                font-size: 1rem;
-                color: white;
-                background-color: #007bff;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-
-                
-                .icon {
-                    color: white;
-                }
-
-                &:hover {
-                    background-color: #0056b3;
-                }
-            }
+        
+            .intern-download-button,
             .resume-download-button {
                 padding: 10px 20px;
                 font-size: 1rem;
@@ -139,19 +122,16 @@
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background-color 0.3s;
-
-               
-
+        
                 .icon {
                     color: white;
                 }
-
+        
                 &:hover {
                     background-color: #0056b3;
                 }
             }
         }
-
         .scroll-top-button {
             position: fixed;
             bottom: 20px;
@@ -185,4 +165,22 @@
         }
     }
 
+}
+
+@media screen and (max-width:$screen-xl){
+    .home-container{
+        .main-content{
+            .download-section{
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home-container{
+        .main-content{
+            padding: 100px;
+        }
+    }
 }

@@ -127,3 +127,18 @@
         }
     }
 }
+
+@media screen and (max-width:600px) {
+    .cont-section{
+        .contact-container{
+            margin-left: 0;
+
+            .contact-description{
+                text-align: justify;
+            }
+            .contact-content{
+                display: block;
+            }
+        }
+    }
+}

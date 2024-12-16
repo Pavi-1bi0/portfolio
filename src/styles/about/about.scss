@@ -1,5 +1,9 @@
+@import '../abstract/break_points';
+
+
 .about-section {
   background-color: white;
+
   .about-container {
     text-align: center;
     margin: 0 auto;
@@ -34,8 +38,10 @@
       font-size: 16px;
       margin-bottom: 40px;
       line-height: 1.6;
-      width: 100%;
+      // width: 100%;
       margin-left: 120px;
+      margin-right: 1rem;
+      text-align: justify;
     }
 
     .about-content {
@@ -102,6 +108,42 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:$screen-md-min) {
+  .about-section {
+    .about-container {
+      .about-content {
+        .about-details {
+          margin-left: 200px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .about-section {
+    .about-container {
+      margin-left: 0px;
+
+      .about-content {
+        .about-details {
+          margin-left: 55px;
+
+          .details-list{
+            margin-left: 100px;
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      .about-description {
+        margin-left: 30px;
       }
     }
   }

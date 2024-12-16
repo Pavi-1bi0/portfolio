@@ -106,3 +106,20 @@
     }
   }
 }
+
+@media screen and (max-width:600px){
+  .resume-section{
+    .resume-container{
+      width: auto;
+      margin-left: 0px;
+
+      .resume-intro{
+        width: auto;
+        text-align: justify;
+      }
+      .resume-content{
+        display: block;
+      }
+    }
+  }
+}
