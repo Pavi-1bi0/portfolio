@@ -1,12 +1,12 @@
 import './App.css';
-import { AppRouters } from './routers';  // Import your routing logic (if it's separate)
+import { AppRouters } from './routers'; // Import your router configuration
+import { RouterProvider } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      {/* Your app content */}
-      <h1>Welcome to My Portfolio</h1>
-      {/* Additional content */}
+      {/* Use RouterProvider to manage routing */}
+      <RouterProvider router={AppRouters} />
     </div>
   );
 }

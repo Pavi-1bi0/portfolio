@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/about/about.scss';
+import '../../../styles/about/about.scss';
 import Sidebar from '../sidebar/sidebar';
-import Statistics from '../satiticts/satiticts';
+// import Statistics from '../satiticts/satiticts';
 import Skills from '../skils/skils';
-import pic from '../../assets/certificate/pic.jpeg';
+import pic from '../../../assets/certificate/pic.jpeg';
 
 const About: React.FC = () => {
     const calculateAge = (birthDate: string) => {

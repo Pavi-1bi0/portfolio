@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/contact/contact.scss";
+import "../../../styles/contact/contact.scss";
 import Sidebar from "../sidebar/sidebar";
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';

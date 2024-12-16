@@ -4,7 +4,7 @@ import CottageOutlinedIcon from '@mui/icons-material/CottageOutlined';
 import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
 import AttachEmailOutlinedIcon from '@mui/icons-material/AttachEmailOutlined';
-import '../../styles/sidebar/sidebar.scss';
+import '../../../styles/sidebar/sidebar.scss';
 
 
 const Sidebar: React.FC = () => {

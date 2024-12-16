@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Typography, LinearProgress, Box } from '@mui/material';
-import '../../styles/skils/skils.scss';
+import '../../../styles/skils/skils.scss';
 
 interface Skill {
   name: string;

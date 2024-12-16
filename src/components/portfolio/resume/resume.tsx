@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/resume/resume.scss";
+import "../../../styles/resume/resume.scss";
 import Sidebar from "../sidebar/sidebar";
 
 const Resume: React.FC = () => {

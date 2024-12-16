@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/home/home.scss";
+import "../../../styles/home/home.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
+// import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 import Sidebar from "../sidebar/sidebar";
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
-import intern from '../../assets/certificate/Internship_Certificate-Parameshwari.pdf';
+import intern from '../../../assets/certificate/Internship_Certificate-Parameshwari.pdf';
 // import resume from '../../assets/certificate/'
 
 const Home: React.FC = () => {
-    const [showScrollButton, setShowScrollButton] = useState(false);
+    const [, setShowScrollButton] = useState(false);
 
     // Function to handle scrolling
     const handleScroll = () => {
@@ -21,12 +21,6 @@ const Home: React.FC = () => {
     };
 
     // Function to scroll to the top
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
 
     // Attach scroll event listener
     useEffect(() => {
