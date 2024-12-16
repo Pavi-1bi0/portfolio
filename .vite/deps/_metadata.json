@@ -1,0 +1,112 @@
+{
+  "hash": "84d40be0",
+  "configHash": "b4036296",
+  "lockfileHash": "c6541506",
+  "browserHash": "36658173",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "bddfd9fb",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "f7b58dbc",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "ccca980a",
+      "needsInterop": false
+    },
+    "@mui/icons-material/CottageOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/CottageOutlined.js",
+      "file": "@mui_icons-material_CottageOutlined.js",
+      "fileHash": "80f38e5a",
+      "needsInterop": false
+    },
+    "@mui/icons-material/PersonOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/PersonOutlined.js",
+      "file": "@mui_icons-material_PersonOutlined.js",
+      "fileHash": "d337be8b",
+      "needsInterop": false
+    },
+    "@mui/icons-material/EventNoteOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/EventNoteOutlined.js",
+      "file": "@mui_icons-material_EventNoteOutlined.js",
+      "fileHash": "b3b242dd",
+      "needsInterop": false
+    },
+    "@mui/icons-material/AttachEmailOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/AttachEmailOutlined.js",
+      "file": "@mui_icons-material_AttachEmailOutlined.js",
+      "fileHash": "1c5e397d",
+      "needsInterop": false
+    },
+    "@mui/icons-material/Menu": {
+      "src": "../../node_modules/@mui/icons-material/esm/Menu.js",
+      "file": "@mui_icons-material_Menu.js",
+      "fileHash": "cd49521f",
+      "needsInterop": false
+    },
+    "@mui/icons-material/LinkedIn": {
+      "src": "../../node_modules/@mui/icons-material/esm/LinkedIn.js",
+      "file": "@mui_icons-material_LinkedIn.js",
+      "fileHash": "62b0f2d5",
+      "needsInterop": false
+    },
+    "@mui/icons-material/GitHub": {
+      "src": "../../node_modules/@mui/icons-material/esm/GitHub.js",
+      "file": "@mui_icons-material_GitHub.js",
+      "fileHash": "7d2be08d",
+      "needsInterop": false
+    },
+    "@mui/icons-material/FileDownloadOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/FileDownloadOutlined.js",
+      "file": "@mui_icons-material_FileDownloadOutlined.js",
+      "fileHash": "90b37912",
+      "needsInterop": false
+    },
+    "@mui/icons-material/LocationOnOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/LocationOnOutlined.js",
+      "file": "@mui_icons-material_LocationOnOutlined.js",
+      "fileHash": "bbe5d63d",
+      "needsInterop": false
+    },
+    "@mui/icons-material/CallOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/CallOutlined.js",
+      "file": "@mui_icons-material_CallOutlined.js",
+      "fileHash": "1150e0e9",
+      "needsInterop": false
+    },
+    "@mui/icons-material/MarkEmailUnreadOutlined": {
+      "src": "../../node_modules/@mui/icons-material/esm/MarkEmailUnreadOutlined.js",
+      "file": "@mui_icons-material_MarkEmailUnreadOutlined.js",
+      "fileHash": "bdc28e40",
+      "needsInterop": false
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "8490085d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-L2Q2RVSC": {
+      "file": "chunk-L2Q2RVSC.js"
+    },
+    "chunk-C6WWHQR7": {
+      "file": "chunk-C6WWHQR7.js"
+    },
+    "chunk-Z732FAHK": {
+      "file": "chunk-Z732FAHK.js"
+    },
+    "chunk-DDNM7ENY": {
+      "file": "chunk-DDNM7ENY.js"
+    }
+  }
+}
